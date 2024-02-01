@@ -12,9 +12,7 @@ const ProductProvider = ({children}) => {
       setProducts(data)
       console.log(data)
     }
-    fetchProducts()
-    
-   
+    fetchProducts();
   },[]);
 
   return <ProductContext.Provider value={{products}}>

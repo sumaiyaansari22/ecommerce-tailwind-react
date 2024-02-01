@@ -2,14 +2,14 @@ import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { ProductContext } from '../contexts/ProductContext';
 import { CartContext } from '../contexts/CartContext';
+
 const ProductDetails = () => {
   const {id} = useParams();
-const {products} = useContext(ProductContext);
-const {addToCart} = useContext(CartContext);
-const product = products.find(item=>{
+  const {products} = useContext(ProductContext);
+  const {addToCart} = useContext(CartContext);
+  const product = products.find(item=>{
   return item.id === parseInt(id);
-})
-
+});
 if(!product){
   return(
     <section className='h-screen flex justify-center items-center'>

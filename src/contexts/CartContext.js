@@ -78,8 +78,6 @@ const decreaseAmount = (id)=>{
   }if(cartItem.amount<2){
       removeFromCart(id)
     }
-  
-  
 }
 
   return <CartContext.Provider value={{cart,addToCart,removeFromCart,clearCart,increaseAmount,decreaseAmount,itemAmount,total}}>
