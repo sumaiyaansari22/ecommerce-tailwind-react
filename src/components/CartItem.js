@@ -2,9 +2,13 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import {IoMdAdd, IoMdClose, IoMdRemove} from 'react-icons/io'
 import { CartContext } from '../contexts/CartContext';
+
+
 const CartItem = ({item}) => {
+
   const { id, title, image, price, amount  } = item;
   const {removeFromCart,increaseAmount,decreaseAmount} = useContext(CartContext);
+  
   return <div className='flex gap-x-4 py-2 lg:px-6 border-b border-gray-400 w-full font-light
   text-gray-500'>
     <div className='w-full min-h-[150px] flex items-center gap-x-4'>

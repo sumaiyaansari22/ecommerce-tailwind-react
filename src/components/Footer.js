@@ -1,7 +1,5 @@
 import React, {useContext} from 'react';
 
-
-
 const Footer = () => {
 
   return <footer className='bg-primary py-12'>
