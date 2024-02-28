@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import {IoMdAdd, IoMdClose, IoMdRemove} from 'react-icons/io'
 import { CartContext } from '../contexts/CartContext';
+import Footer from './Footer';
 
 
 const CartItem = ({item}) => {
@@ -36,7 +37,7 @@ const CartItem = ({item}) => {
         </div>
       </div>
     </div>
-  </div>;
+  </div>
 };
 
 export default CartItem;

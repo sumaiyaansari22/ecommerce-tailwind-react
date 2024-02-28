@@ -2,6 +2,10 @@ import React,{useContext} from 'react';
 import { ProductContext } from '../contexts/ProductContext'
 import Product from '../components/Product'
 import Hero from '../components/Hero';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
+
 const Home = () => {
   const {products} = useContext(ProductContext);
   
@@ -13,6 +17,8 @@ const Home = () => {
   console.log(filteredProducts)
   return (
   <div>
+    <Header/>
+    <Sidebar/>
     <Hero />
     <section className='py-16'>
       <div className='container mx-auto'>
@@ -24,6 +30,7 @@ const Home = () => {
         </div>
       </div>
     </section>
+    <Footer />
   </div>
   );
 };
